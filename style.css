@@ -55,7 +55,7 @@ html, body {
 body {
     font-family: 'Quattrocento', 'Comfortaa', 'Calibri', serif;
     color: #f4f4f4;
-    margin: 0;
+    margin: 0 auto;
     max-width: 1920px;
     background-color: #131313;
 }
@@ -75,6 +75,10 @@ p {
 }
 
 .hidden {
+    display: none;
+}
+
+main {
     display: none;
 }
 

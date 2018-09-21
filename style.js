@@ -1,3 +1,13 @@
+var sequence = document.getElementsByClassName("smokeContainer")[0];
+function hideSequence (event) {
+    if (sequence === event.target) {
+        document.getElementsByTagName("main")[0].style.display = "block";
+        event.target.removeEventListener(event.type, arguments.callee);
+    }
+}
+sequence.addEventListener("webkitAnimationStart", hideSequence);
+sequence.addEventListener("animationstart", hideSequence);
+
 $(document).ready(function() {
     /* Every time the window is scrolled ... */
     function ScrollHandler (event){
@@ -68,7 +78,7 @@ $(document).ready(function() {
             if(bottom_of_window > bottom_of_object) {
                 $(this).addClass('reveal-text2');
             }
-        });       
+        });
     }
     $(window).scroll(ScrollHandler);
 
