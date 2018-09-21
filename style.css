@@ -1425,14 +1425,14 @@ main {
 @keyframes introSequence {
     0% {
         text-shadow: 0 0 50px #fff;
-        letter-spacing: 80px;
+        letter-spacing: .6em;
         opacity: 0.2;
         filter:blur(1px);
         transform: rotateY(-40deg);
     }
     50% {
         text-shadow: 0 0 1px #fff;
-        letter-spacing: 30px;
+        letter-spacing: .3em;
         opacity: 0.5;
         filter:blur(1px);
         transform: rotateY(0deg);
@@ -1440,7 +1440,7 @@ main {
     75% {
         text-shadow: 0 0 1px #fff;
         opacity: 0.8;
-        letter-spacing: 15px;
+        letter-spacing: .15em;
         filter:blur(1px);
         transform: translateY(0px);
     }
@@ -1526,6 +1526,45 @@ main {
     white-space: nowrap;
 }
 
+/* Sequence adaptive */
+@media screen and (max-width: 400px) {
+    .smokeText h2 {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 550px) {
+    .smokeText h2 {
+        font-size: 27px;
+    }
+}
+@media screen and (min-width: 551px) and (max-width: 700px) {
+    .smokeText h2 {
+        font-size: 35px;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    .smokeText h2 {
+        font-size: 46px;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    .smokeText h2 {
+        font-size: 59px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .smokeText h2 {
+        font-size: 65px;
+    }
+}
+@media screen and (orientation: portrait) and (max-width: 800px) {
+    .smokeContainer {
+        /* More centered mobile variant */
+        /*padding: 25vh 5px;*/
+        padding: 2% 5px;
+    }
+}
+
 #smokeText1, #smokeText4 {
     top: 0;
 }
@@ -1586,7 +1625,7 @@ main {
     height: 50%;
     top: 50%;
     left: 0;
-    color: hsla(0,0%,0%,0);
+    color: white;
     -webkit-animation:fadeTwo 4.75s linear;
     -moz-animation:fadeTwo 4.75s linear;
     animation:fadeTwo 4.75s linear;
@@ -1622,6 +1661,56 @@ main {
     -webkit-animation-delay: 9s;
     -moz-animation-delay: 9s;
     animation-delay: 9s;
+}
+
+/* Name adaptive */
+@media screen and (max-width: 400px) {
+    .name {
+        font-size: 20px;
+    }
+    .neon {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 550px) {
+    .name {
+        font-size: 27px;
+    }
+    .neon {
+        font-size: 38px;
+    }
+}
+@media screen and (min-width: 551px) and (max-width: 700px) {
+    .name {
+        font-size: 35px;
+    }
+    .neon {
+        font-size: 65px;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    .name {
+        font-size: 50px;
+    }
+    .neon {
+        font-size: 90px;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    .name {
+        font-size: 59px;
+    }
+    .neon {
+        font-size: 109px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .name {
+        font-size: 65px;
+    }
+    .neon {
+        font-size: 120px;
+    }
 }
 
 /*  MEDIA QUERIES */
