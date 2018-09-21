@@ -1542,7 +1542,7 @@ main {
 }
 
 #smokeText3 {
-    top: 50%
+    top: 50%;
     transform: translateY(-50%)
 }
 
