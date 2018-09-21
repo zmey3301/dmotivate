@@ -10,8 +10,6 @@ function hideSequence (event) {
 }
 for (animation of animationStartEvents) sequence.addEventListener(animation, hideSequence);
 
-sequence.addEventListener("animationstart", hideSequence);
-
 // Sequence optimisation via will-change
 var allSmokeText = Array.prototype.slice.call(document.querySelectorAll(".smokeText>h2"));
 var willChange = "transform, filter, opacity, text-shadow";
