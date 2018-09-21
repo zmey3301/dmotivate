@@ -1500,114 +1500,68 @@ main {
     height: 100%;
 }
 
-.smokeText h2 {
-    font-family: 'Dosis', 'Lato', sans-serif;
-    font-size: 80px;
-    font-weight: 200;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-transform: uppercase;
-    letter-spacing: 15px;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 0;
+.smokeText {
     left: 0;
-    color: hsla(0,0%,0%,0);
+    position: absolute;
+    right: 0
+}
+
+.smokeText h2 {
     -webkit-animation:introSequence 4.2s linear forwards;
     -moz-animation:introSequence 4.2s linear forwards;
     animation:introSequence 4.2s linear forwards;
     /*animation-play-state: paused;*/
+    color: white;
+    font-family: 'Dosis', 'Lato', sans-serif;
+    font-size: 80px;
+    font-weight: 200;
+    letter-spacing: 15px;
+    margin: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    white-space: nowrap;
 }
 
-#smokeText1 h2 {
-    height: 100%;
-    /*top: 0;
-    left: 0;
-    text-align: left;*/
-/*  Centering with flexbox */
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+#smokeText1, #smokeText4 {
+    top: 0;
+}
+
+#smokeText2, #smokeText5 {
+    bottom: 0;
 }
 
 #smokeText2 h2 {
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     animation-delay: 1.5s;
-    height: 100%;
-    /*bottom: 0;
-    right: 0;
-    text-align: right;*/
-    /* Centering with flexbox */
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    text-align: right;
+}
+
+#smokeText3 {
+    top: 50%
+    transform: translateY(-50%)
 }
 
 #smokeText3 h2 {
     -webkit-animation-delay: 3s;
     -moz-animation-delay: 3s;
     animation-delay: 3s;
-    height: 100%;
-    /* Centering with flexbox */
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 #smokeText4 h2 {
     -webkit-animation-delay: 4.5s;
     -moz-animation-delay: 4.5s;
     animation-delay: 4.5s;
-    height: 100%;
-    /* Centering with flexbox */
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: start;
-    align-items: flex-start;
 }
 
 #smokeText5 h2 {
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     animation-delay: 6s;
-    height: 100%;
-    /* Centering with flexbox */
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: end;
-    align-items: flex-end;
 }
 
 .neonText {
