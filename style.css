@@ -78,6 +78,11 @@ p {
     display: none;
 }
 
+/* Cause hidden is block on smal screens */
+.always-hidden {
+    display: none;
+}
+
 /*.smokeContainer {
     display: none;
 }*/
@@ -230,8 +235,8 @@ p {
 }
 
 .logo img {
-    width: 100%;
     padding: 0 10%;
+    width: 100%;
 }
 
 .fullMenu > ul {
@@ -412,7 +417,7 @@ p {
     text-transform: uppercase;
     display: inline-block;
     border-radius: 10px;
-    box-shadow: inset 0 0 15px 2px rgba(143,252,255,.8), 0 0 15px 2px rgba(143,252,255,.8);
+    box-shadow: inset 0 0 15px 2px rgba(143, 252, 255, .8), 0 0 15px 2px rgba(143, 252, 255, .8);
     border: 2px solid #8ffcff;
     transition: border .25s linear, box-shadow .25s linear;
     width: auto;
@@ -420,7 +425,7 @@ p {
 
 .homeBtn:hover {
     border: 2px solid #FF8F0D;
-    box-shadow: inset 0 0 15px 2px rgba(255,143,13,.8), 0 0 15px 2px rgba(255,143,13,.8);
+    box-shadow: inset 0 0 15px 2px rgba(255, 143, 13, .8), 0 0 15px 2px rgba(255, 143, 13, .8);
     transition: border .25s linear, box-shadow .25s linear;
 }
 
@@ -1419,14 +1424,11 @@ p {
     0% {
         text-shadow: 0 0 50px #fff;
         letter-spacing: .6em;
-        opacity: 0.2;
-        transform: rotateY(-40deg);
+        transform: rotateY(-40deg) rotateZ(0);
     }
     50% {
         text-shadow: 0 0 1px #fff;
-        letter-spacing: .3em;
-        opacity: 0.5;
-        transform: rotateY(0deg);
+        transform: rotateY(0deg) rotateZ(0);
     }
     75% {
         text-shadow: 0 0 1px #fff;
@@ -1710,6 +1712,13 @@ p {
         line-height: 26px;
     }
     /* NAV */
+    nav#nav > .hamburger, nav#nav > span {
+        display: none;
+    }
+    .fullMenu {
+        padding-top: 20px;
+        height: 70px;
+    }
     .fullMenu > ul > li {
         margin: 0 2.3%;
     }
@@ -2126,6 +2135,10 @@ p {
     }
 }
 @media screen and (max-width: 720px) {
+    /* Main Sequence */
+    .smokeText h2 {
+        animation-duration: 3.25s;
+    }
     /* NAV */
     #nav {
         padding: 3%;
