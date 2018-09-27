@@ -435,9 +435,8 @@ p {
     font-size: 100px;
     line-height: 125px;
     margin: 0 0;
-    background-image: -webkit-linear-gradient(#FF530D 0%, #FFCA0D 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #8ffcff;
+    text-shadow: 0 0 20px #8ffcff;
     /*text-shadow: 0 0 25px rgba(255,255,255,.4);*/
     /*-webkit-filter: drop-shadow(0 0 5px rgba(232, 187, 89, .6));*/
     text-transform: uppercase;
