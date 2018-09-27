@@ -2,10 +2,12 @@ var animationStartEvents =  ["webkitAnimationStart", "animationStart"];
 var animationEndEvents = ["webkitAnimationEnd", "animationend"];
 var sequence = document.getElementsByClassName("smokeContainer")[0];
 var animation;
+$.holdReady(true);
 function hideSequence (event) {
     if (sequence === event.target) {
         document.getElementsByTagName("main")[0].style.display = "block";
         event.target.removeEventListener(event.type, arguments.callee);
+        $.holdReady(false);
     }
 }
 for (animation of animationStartEvents) sequence.addEventListener(animation, hideSequence);
